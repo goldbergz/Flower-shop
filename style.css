@@ -24,7 +24,7 @@ body {
     font-size: 2.5vw;
   }
   
-.topmenu ul {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -34,15 +34,19 @@ body {
     width: 45vw;
     padding-right: 8vw;
 
+.menu li:hover {
+  background-color: #15522f;
+  color: #ea8def;
+  transition: all 0.3s ease;
   }
   
-.topmenu ul li {
+nav ul li {
     font-size: 1.2vw;
     padding: 1vw 0 0 0;
     text-decoration: none;
     text-transform: uppercase;
 }
-  
+
 .main-photo  {
   position: relative;
 }
@@ -54,12 +58,12 @@ body {
 }
 
 .motto {
-    position: absolute;
-    top: 40%;
-    left: 100px;
-    width: 50%;
-    color: #ea8def;
-    font-size: 7vw;
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  width: 50%;
+  color: #ea8def;
+  font-size: 7vw;
 }
 
 .motto p {
