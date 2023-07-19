@@ -81,92 +81,78 @@ body {
   
   .menu li:hover .submenu li {
     background: none;
-  }
-
-.main-photo  {
-  position: relative;
-  height: 45vw;
 }
 
-.main-photo-card {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.gips {
+    height: 50vw;
+    position: relative;
+}  
+
+.gips .pink-box {
+    background-color: #ea8def;
+    height: 50%;
 }
 
-.motto {
-  position: absolute;
-  top: 40%;
-  left: 100px;
-  width: 50%;
-  color: #ea8def;
-  font-size: 7vw;
+.gips .grin-box {
+    background-color: #15522f;
+    height: 50%;
 }
 
-.motto p {
-  text-transform: capitalize;
-  line-height: 1.5;
-  margin-bottom: 0;
+.gips img {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    border-radius: 50%;
+    height: 50vw;
+    width: 50vw;
 }
 
-.motto-description {
-  font-size: 2vw;
-  margin-top: 0;
+.gips-text {
+    position: absolute;
+    top: 9%;
+    left: 3%;
+    font-size: 10vw;
+    padding: 15vw 15vw;
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing: 0.15em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.gips-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vw;
+    background-color: #15522f;
+    text-align: center;
 
 }
 
-.portfolio {
-  background-color: rgb(14, 48, 45);
-  height: 1600px;
+.gips-description h1 {
+    font-size: 4vw;
+    color: #fff;
+    
 }
 
-.grid-portfolio-1 {
-  display: grid;
-  grid-template-columns: 495px 460px;
-  grid-template-rows: 290px 290px;
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
-  justify-content: center;
-  padding-top: 250px;
+.gips-description p {
+    line-height: 1.5;
+    color: #fff;
+    font-size: 2vw;
 }
 
-.photo-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
+.card-box {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vw;
+    align-items: center;
 }
 
-.photo-2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
+.card-box h1 {
+    text-align: center;
 }
-
-.photo-3 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.grid-portfolio-2 {
-  display: grid;
-  grid-template-columns: 230px 230px 460px;
-  grid-template-rows: 230px 260px;
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
-  justify-content: center;
-  padding-top: 50px;
-  padding-right: 23px;
-}
-
-.photo-6 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-footer {
-  height: 70px;
+.card-box img {
+    height: 25vw;
+    width: 20vw;
 }
