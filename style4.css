@@ -89,12 +89,12 @@ body {
 }  
 
 .gips .pink-box {
-    background-color: #ea8def;
+    background-color: #c673cb;
     height: 50%;
 }
 
 .gips .grin-box {
-    background-color: #15522f;
+    background-color: rgb(14, 48, 45);
     height: 50%;
 }
 
@@ -103,6 +103,7 @@ body {
     top: 0;
     left: 25%;
     border-radius: 50%;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     height: 50vw;
     width: 50vw;
 }
@@ -125,20 +126,19 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 50vw;
-    background-color: #15522f;
     text-align: center;
 
 }
 
 .gips-description h1 {
     font-size: 4vw;
-    color: #fff;
+    color: rgb(14, 48, 45);
     
 }
 
 .gips-description p {
     line-height: 1.5;
-    color: #fff;
+    color: rgb(14, 48, 45);
     font-size: 2vw;
 }
 
@@ -149,10 +149,67 @@ body {
     align-items: center;
 }
 
-.card-box h1 {
-    text-align: center;
-}
-.card-box img {
-    height: 25vw;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
     width: 20vw;
+    min-height: 25vw;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(11, 63, 28, 0.2);
+}
+
+.card-image {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 79%;
+}
+
+
+.card-image > img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+.card-image:hover > img {
+    transform: scale(1.1);
+}
+
+.card-bottom {
+    padding: 10px;
+}
+  
+.card-prices {
+    margin-bottom: 0.3vw;
+    font-size: 1.7vw;
+}
+
+.card-prices:after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+
+.card-title {
+    display: block;
+    margin-bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 150%;
+    color: #414141;
+}
+  
+.card-title:hover {
+    color: #1a6c3e;
 }

@@ -112,11 +112,10 @@ body {
 .motto-description {
   font-size: 2vw;
   margin-top: 0;
-
 }
 
 .portfolio {
-  background-color: rgb(14, 48, 45);
+  background-color: rgba(14, 48, 45, 0.5);
   height: 1600px;
 }
 
