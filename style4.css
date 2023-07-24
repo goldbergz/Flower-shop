@@ -51,13 +51,13 @@ body {
   }
   
   .menu li:hover {
-    background-color: #15522f;
-    color: #ea8def;
+    background-color: rgb(17, 57, 54);
+    color: #d998aa;
     transition: all 0.3s ease;
     }
   
   .menu li a:hover {
-    color: #ea8def;
+    color: #d998aa;
     transition: all 0.3s ease;
   }
   
@@ -75,6 +75,11 @@ body {
     margin-bottom: 5px;
     border-left: 1px solid #fff;
   }
+
+  .submenu li a:hover {
+    color: rgb(17, 57, 54);
+  }
+
   .menu li:hover .submenu {
     display: block;
   }
@@ -86,15 +91,16 @@ body {
 .gips {
     height: 50vw;
     position: relative;
+    z-index: 1;
 }  
 
 .gips .pink-box {
-    background-color: #c673cb;
+    background-color: #d998aa;
     height: 50%;
 }
 
 .gips .grin-box {
-    background-color: rgb(14, 48, 45);
+    background-color: rgb(17, 57, 54);
     height: 50%;
 }
 
@@ -125,21 +131,59 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vw;
+    height: 40vw;
     text-align: center;
+    position: relative;
+}
 
+.grin-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(17, 57, 54, 0.9);
+    height: 20vw;
+    width: 20vw;
+    filter: blur(3.5rem);
+}
+
+.pink-circle {
+    position: absolute;
+    top: -20vw;
+    left: 45vw;
+    border-radius: 50%;
+    background-color: #d998aa;
+    height: 50vw;
+    width: 50vw;
+    filter: blur(3rem);
+}
+
+.grin-circle2 {
+    position: absolute;
+    top: 25vw;
+    right: -10vw;
+    border-radius: 50%;
+    background-color: rgba(17, 57, 54, 0.9);
+    height: 20vw;
+    width: 20vw;
+    filter: blur(3.5rem);
 }
 
 .gips-description h1 {
     font-size: 4vw;
     color: rgb(14, 48, 45);
-    
+    border-bottom: 2px solid rgb(14, 48, 45);
+    margin: 0 20vw 2vw 20vw;
+    padding: 3vw;
+    z-index: 1;
 }
 
 .gips-description p {
     line-height: 1.5;
     color: rgb(14, 48, 45);
     font-size: 2vw;
+    margin: 0 15vw 0 15vw;
+    z-index: 1;
 }
 
 .card-box {

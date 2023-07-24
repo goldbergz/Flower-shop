@@ -51,13 +51,13 @@ body {
   }
   
   .menu li:hover {
-    background-color: #15522f;
-    color: #ea8def;
+    background-color: rgb(17, 57, 54);
+    color: #d998aa;
     transition: all 0.3s ease;
     }
   
   .menu li a:hover {
-    color: #ea8def;
+    color: #d998aa;
     transition: all 0.3s ease;
   }
   
@@ -79,6 +79,9 @@ body {
     display: block;
   }
   
+  .submenu li a:hover {
+    color: rgb(17, 57, 54);
+  }
   .menu li:hover .submenu li {
     background: none;
   }
