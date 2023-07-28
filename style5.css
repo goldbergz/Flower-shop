@@ -1,0 +1,52 @@
+.portfolio {
+    background-color: rgba(14, 48, 45, 0.5);
+    height: 1600px;
+  }
+  
+  .grid-portfolio-1 {
+    display: grid;
+    grid-template-columns: 495px 460px;
+    grid-template-rows: 290px 290px;
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+    justify-content: center;
+    padding-top: 250px;
+  }
+  
+  .photo-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+  }
+  
+  .photo-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+  
+  .photo-3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .grid-portfolio-2 {
+    display: grid;
+    grid-template-columns: 230px 230px 460px;
+    grid-template-rows: 230px 260px;
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 23px;
+  }
+  
+  .photo-6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
