@@ -158,15 +158,85 @@ body {
   box-shadow: 20px 20px 4px rgba(212, 215, 169, 0.8);
 }
 
-.catalouge-title {
+.catalouge-title-1 {
   font-size: 2vw;
-  padding: 2vw 0;
+  padding: 2vw 0 0 2vw;
+  width: 8.5em;
+  position: relative;
 }
 
-.catalouge-title a {
+.catalouge-title-2 {
+  font-size: 2vw;
+  padding: 2vw 0 0 2vw;
+  width: 8.5em;
+  position: relative;
+}
+
+.catalouge-title-3 {
+  font-size: 2vw;
+  padding: 2vw 0 0 2vw;
+  width: 8.5em;
+  position: relative;
+}
+
+.catalouge-title-4 {
+  font-size: 2vw;
+  padding: 2vw 0 0 2vw;
+  width: 8.5em;
+  position: relative;
+}
+
+.catalouge-title-1 svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  top: 2vw;
+  left: 8vw;
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.catalouge-title-2 svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  top: 2vw;
+  left: 11vw;
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.catalouge-title-3 svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  top: 2vw;
+  left: 10vw;
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.catalouge-title-4 svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  top: 2vw;
+  left: 12vw;
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.catalouge-title-1:hover svg,
+.catalouge-title-2:hover svg,
+.catalouge-title-3:hover svg,
+.catalouge-title-4:hover svg {
+  transform: translateX(15px);
+}
+
+.catalouge-card a {
   text-decoration: none;
   color: #536457;
-} 
+}
 
 .about-us {
   display: flex;
