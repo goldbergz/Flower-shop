@@ -227,3 +227,39 @@ body {
 .card-title:hover {
   color: #536457;
 }
+
+footer {
+  height: 10vw;
+  background-color: #738a78;
+  margin-top: 5vw;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-side h2 {
+  font-weight: 300;
+}
+
+.left-side p {
+  line-height: 1.5em;
+}
+
+.flow {
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3em;
+}
+
+.right-side h2 {
+  font-weight: 300;
+}
+
+.right-side > img {
+  height: 2vw;
+  width: 2vw;
+  padding: 0.5vw 1.8vw 0 0;
+}
