@@ -10,76 +10,71 @@
     <link rel="stylesheet" href="adaptive.css">
 </head>
 <body>
-    <header>
-        <nav class="topmenu">
-            <div class="shop-name">
-                <h2>Flow</h2>
-            </div>
-            <ul class="menu">
-                <li><a href="#main">Главная</a></li>
-                <li><a href="#">Каталог</a>
-                <ul class="submenu">
-                    <li><a href="index1.html">Пионы</a></li>
-                    <li><a href="index2.html">Тюльпаны</a></li>
-                    <li><a href="index3.html">Ромашки</a></li>
-                    <li><a href="index4.html">Гипсофилы</a></li>
-                </ul>
-                </li>
-                <li><a href='index5.html'>О нас</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+            <h2 class="logo header__logo">Flow</h2>
+            <nav class="header__topmenu">
+                <span class="header__topmenu-item"><a href="index.html">Главная</a></span>
+                <span class="header__topmenu-item"><a href="#">Каталог</a>
+                <div class="header__submenu">
+                    <div class="header__submenu-link"><a href="index1.html">Пионы</a></div>
+                    <div class="header__submenu-link"><a href="index2.html">Тюльпаны</a></div>
+                    <div class="header__submenu-link"><a href="index3.html">Ромашки</a></div>
+                    <div class="header__submenu-link"><a href="index4.html">Гипсофилы</a></div>
+                </div>
+            </span>
+                <span class="header__topmenu-item"><a href='index5.html'>О нас</a></span>
+            </nav>
     </header>
     <main>
-        <article id="main">
-        <div class="main-photo">
-        <img src="images/main.jpeg" alt="Пионы" class="main-photo-card">
-        </div>
-        <div class="motto">Из нашего сада <br>С любовью</div>
-        <div class="yellow-square">
+        <article class="cover">
+            <div class="cover__background-image">
+                <img src="images/main.jpeg" alt="Фоновое изображение">
+            </div>
+            <div class="cover__title">Из нашего сада <br>С любовью</div>
+            <div class="cover__substrate"></div>
         </article>
         <article class="catalouge">
-            <div class="grin-square"></div>
-            <div class="catalouge-images">
-                <div class="catalouge-card">
-                    <div class="catalouge-image">
+            <div class="catalouge__substrate"></div>
+            <div class="catalouge__card-box">
+                <div class="card">
+                    <div class="card__image">
                         <img src="images/cat-pion.jpeg">
                     </div>
                     <a href="index1.html">
-                        <div class="catalouge-title-1">Пионы
+                        <div class="card__title-1">Пионы
                             <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round" stroke-linecap="round"></path></svg>
                         </div>
                     </a>
                 </div>
-                <div class="catalouge-card">
-                    <div class="catalouge-image">
+                <div class="card">
+                    <div class="card__image">
                         <img src="images/cat-tulips.jpeg">
                     </div>
-                    <div class="background-card"></div>
                     <a href="index2.html">
-                        <div class="catalouge-title-2">Тюльпаны
+                        <div class="card__title-2">Тюльпаны
                             <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round" stroke-linecap="round"></path></svg>
                         </div>
                     </a>
                 </div>
-                <div class="catalouge-card">
-                    <div class="catalouge-image">
+                <div class="card">
+                    <div class="card__image">
                         <img src="images/cat-dais.jpeg">
                     </div>
                     <a href="index3.html">
-                        <div class="catalouge-title-3">Ромашки
+                        <div class="card__title-3">Ромашки
                             <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round" stroke-linecap="round"></path></svg>
                         </div>
                     </a>
                 </div>
-                <div class="catalouge-card">
-                    <div class="catalouge-image">
+                <div class="card">
+                    <div class="card__image">
                         <img src="images/cat-gyp.jpeg">
                     </div>
                     <a href="index4.html">
-                        <div class="catalouge-title-4">Гипсофила
+                        <div class="card__title-4">Гипсофила
                             <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round" stroke-linecap="round"></path></svg>
                         </div>
@@ -87,37 +82,45 @@
                 </div>            
             </div>
         </article>
-        <article class="about-us">
-            <div class="about-us-img">
+        <article class="about">
+            <div class="about__image">
                 <img src="images/florist.jpeg">
             </div>
-            <div class="about-us-text">
-                <h2>О нас</h2>
-                <div class="columns-p">
-                <p>Мы знаем, как из знакомых всем цветов можно создать удивительные флористические композиции, авторского исполнения нашими мастерами, ручные работы, индивидуальные заказы - всё это, безусловно, на все случаи жизни!</p>
-                <p>Но повод купить цветы или заказать букет с доставкой для подарка самостоятельно придумывать не нужно! Красивая и элегантная, простая и изысканная композиция может стать приятным сюрпризом для любимой в самый обычный день.</p>
+            <div class="about__text">
+                <h2 class="about__title">О нас</h2>
+                <div class="about__paragraphs">
+                    <p>Мы знаем, как из знакомых всем цветов можно создать удивительные флористические композиции, авторского исполнения нашими мастерами, ручные работы, индивидуальные заказы - всё это, безусловно, на все случаи жизни!</p>
+                    <p>Но повод купить цветы или заказать букет с доставкой для подарка самостоятельно придумывать не нужно! Красивая и элегантная, простая и изысканная композиция может стать приятным сюрпризом для любимой в самый обычный день.</p>
                 </div>
-                <a href='index5.html'><button class="button">Подробнее
-                    <div class="iconButton">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
-                    </div>
-                  </button></a>
+                <a href='index5.html'>
+                    <button class="button">Подробнее
+                        <div class="button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                        </div>
+                    </button>
+                </a>
             </div>
         </article>
     </main>
-    <footer>
-        <div class="flex-footer">
-            <div class='left-side'>
-                <h2>Связаться с нами</h2>
-                <p>+7 800 345 23 23<br>flow-shop@mail.ru</p>
+    <footer class="footer">
+        <div class='footer__left-side'>
+            <h2 class="footer__title">Связаться с нами</h2>
+            <p class="footer__text">+7 800 345 23 23<br>flow-shop@mail.ru</p>
+        </div>
+        <div class="logo">Flow</div>
+        <div class="footer__right-side">
+            <div class="footer__sns">
+            <div class="footer__sns-icon">
+                <img src="images/instagram.png" alt="Инстаграм">
             </div>
-            <div class="flow">Flow</div>
-            <div class="right-side">
-                <h2>Наши соцсети</h2>
-                <img src="images/instagram.png">
-                <img src="images/telegram.png">
-                <img src="images/youtube.png">
+            <div class="footer__sns-icon">
+                <img src="images/telegram.png" alt="Телеграм">
             </div>
+            <div class="footer__sns-icon">
+                <img src="images/youtube.png" alt="Ютуб">
+            </div>
+            </div>
+        </div>
         </div>
     </footer> 
 </body>
