@@ -142,6 +142,7 @@ body {
   justify-content: space-evenly;
   height: 50vw;
   align-items: center;
+  flex-basis: 25%;
 }
 
 .catalouge-card {
@@ -153,35 +154,15 @@ body {
 
 .catalouge-image > img {
   height: 25vw;
-  width: 20vw;
   box-shadow: 20px 20px 4px rgba(212, 215, 169, 0.8);
 }
 
-.catalouge-title-1 {
+.catalouge-title-1,
+.catalouge-title-2,
+.catalouge-title-3,
+.catalouge-title-4 {  
   font-size: 2vw;
   padding: 2vw 0 0 2vw;
-  width: 8.5em;
-  position: relative;
-}
-
-.catalouge-title-2 {
-  font-size: 2vw;
-  padding: 2vw 0 0 2vw;
-  width: 8.5em;
-  position: relative;
-}
-
-.catalouge-title-3 {
-  font-size: 2vw;
-  padding: 2vw 0 0 2vw;
-  width: 8.5em;
-  position: relative;
-}
-
-.catalouge-title-4 {
-  font-size: 2vw;
-  padding: 2vw 0 0 2vw;
-  width: 8.5em;
   position: relative;
 }
 
@@ -229,7 +210,7 @@ body {
 .catalouge-title-2:hover svg,
 .catalouge-title-3:hover svg,
 .catalouge-title-4:hover svg {
-  transform: translateX(15px);
+  transform: translateX(3vw);
 }
 
 .catalouge-card a {
@@ -257,18 +238,20 @@ body {
   justify-content: start;
   align-items: center;
   background-color: #d5d9be;
+  height: 100%;
   width: 40vw;
-  height: 35vw;
   text-align: center;
   color: #536457;
 }
 
 .about-us-text h2 {
   margin-top: 5vw;
+  font-size: 2vw;
 }
 
 .about-us-text p {
   width: 30vw;
+  font-size: 1.2vw;
 }
 
 .button {
@@ -277,7 +260,7 @@ body {
   font-family: inherit;
   padding: 0.45em;
   padding-left: 1.0em;
-  font-size: 17px;
+  font-size: 1vw;
   font-weight: 500;
   border-radius: 0.9em;
   border: none;
@@ -289,7 +272,7 @@ body {
   position: relative;
   height: 2.8em;
   padding-right: 3em;
-  margin-top: 3vw;
+  margin-top: 2vw;
 }
 
 .about-us-text a {
@@ -333,10 +316,12 @@ footer {
 
 .left-side h2 {
   font-weight: 300;
+  font-size: 2vw;
 }
 
 .left-side p {
   line-height: 1.5em;
+  font-size: 1vw;
 }
 
 .flow {
@@ -348,6 +333,7 @@ footer {
 
 .right-side h2 {
   font-weight: 300;
+  font-size: 2vw;
 }
 
 .right-side > img {

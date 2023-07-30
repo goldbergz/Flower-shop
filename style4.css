@@ -155,10 +155,47 @@ body {
   z-index: 1;
 }
 
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: #536457;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#full {
+  height: 1vw;
+}
+.card-flower {
+  height: 45vw;
+  margin-top: 8vw;
+}
+
+.card-flower h1 {
+  text-align: center;
+  font-size: 3vw;
+  color: #536457;
+}
+
 .card-box {
   display: flex;
   justify-content: space-evenly;
-  height: 50vw;
+  height: 30vw;
   align-items: center;
 }
 

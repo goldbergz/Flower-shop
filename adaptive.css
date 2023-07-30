@@ -1,0 +1,123 @@
+@media (max-width: 1000px) {
+    .catalouge {height: auto;}
+
+    .grin-square {
+        height: 40vw;
+        width: 55vw;
+    }
+      
+    .catalouge-images {
+        height: auto;
+        flex-wrap: wrap;
+    }
+      
+    .catalouge-card {
+        flex-basis: 50%;
+        padding: 5vw 0 5vw 0;
+        align-items: center;
+    }
+
+    .catalouge-image > img {
+        height: 40vw;
+        width: 30vw;
+      }
+      
+    .catalouge-title-1,
+    .catalouge-title-2,
+    .catalouge-title-3,
+    .catalouge-title-4 {font-size: 3vw;}
+
+    .catalouge-title-1 svg {left: 9vw;}
+      
+    .catalouge-title-2 svg {left: 13.5vw;}
+    
+    .catalouge-title-3 svg {left: 12vw;}
+      
+    .catalouge-title-4 svg {left: 14vw;}
+}
+
+@media (max-width: 800px) {
+    .about-us {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+      
+    .about-us-img {
+        width: 90%;
+        height: 45vw;
+    }
+            
+    .about-us-text {
+        height: 100%;
+        width: 90%;
+        margin-top: 2vw;
+    }
+      
+    .about-us-text h2 {
+        margin-top: 2vw;
+        font-size: 3vw;
+    }
+      
+    .columns-p {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        margin: 2vw 0;
+    }
+
+    .about-us-text p {
+        width: 45%;
+        font-size: 2vw;
+        margin: 0;
+    }
+      
+    .button {
+        font-size: 1.8vw;
+        margin: 2vw auto;
+    }
+      
+    footer {
+        height: auto;
+        margin-top: 5vw;
+    }
+      
+    .flex-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+      
+    .left-side {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vw;
+    }
+
+    .left-side h2 {
+        font-size: 3vw;
+    }
+      
+    .left-side p {
+        line-height: 2em;
+        font-size: 2.3vw;
+    }
+      
+    .flow {display: none;}
+      
+    .right-side h2 {
+        font-size: 3vw;
+        margin: 0 22vw 3vw 0;
+    }
+      
+    .right-side > img {
+        height: 3vw;
+        width: 3vw;
+        padding: 0 2vw 0 2vw;
+    }  
+}
