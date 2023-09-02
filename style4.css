@@ -1,8 +1,6 @@
-body {
-  margin: 0;
-}
+* {margin: 0;}
 
-.topmenu {
+.header {
   position: fixed;
   display: flex;
   align-items: center;
@@ -16,15 +14,11 @@ body {
   z-index: 1;
 }
 
-.shop-name {
-  float: left;
-}
+.header__logo {float: left;}
   
-.shop-name h2 {
-  font-size: 2.5vw;
-}
+.logo {font-size: 2.5vw;}
   
-.menu {
+.header__topmenu {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -36,7 +30,7 @@ body {
   padding: 1vw 0 0 0;
 }
   
-.menu li {
+.header__topmenu-item {
   list-style: none;
   color: #fff;
   position: relative;
@@ -44,70 +38,61 @@ body {
   padding: 1vw 5vw;
 }
   
-.menu li a {
+.header__topmenu-item a {
   color: #fff;
   text-decoration: none;
   text-align: center;
 }
   
-.menu li:hover {
+.header__topmenu-item:hover {
   background-color: #738a78;
   color: #ccc99c;
   transition: all 0.3s ease;
 }
-    
-.menu li a:hover {
+  
+.header__topmenu-item a:hover {
   color: #ccc99c;
   transition: all 0.3s ease;
 }
-    
-.submenu {
+  
+.header__submenu {
   position: absolute;
-  left: -40px;
+  left: 0;
   top: 100%;
   width: 100%;
   display: none;
 }
-    
-.submenu li {
+  
+.header__submenu-link {
   text-align: left;
   padding: 10px;
   margin-bottom: 5px;
   border-left: 1px solid #fff;
 }
+.header__topmenu-item:hover .header__submenu {display: block;}
 
-.menu li:hover .submenu {
-  display: block;
-}
-  
-.submenu li:hover {
-  border-left: 1px solid #738a78;
-}
-  
-.submenu li a:hover {
-  color:#738a78;
-}
+.header__submenu-link:hover {border-left: 1px solid #738a78;}
 
-.menu li:hover .submenu li:hover {
-  background-color: #ccc99c;
-}
+.header__submenu-link a:hover {color:#738a78;}
+
+.header__topmenu-item:hover .header__submenu-link:hover {background-color: #ccc99c;}
   
-.gips {
+.cover {
   height: 50vw;
   position: relative;
 }  
 
-.gips .pink-box {
+.cover__top-side {
   background-color: #ccc99c;
   height: 50%;
 }
 
-.gips .grin-box {
+.cover__bottom-side {
   background-color: #738a78;
   height: 50%;
 }
 
-.gips img {
+.cover__image img {
   position: absolute;
   top: 0;
   left: 25%;
@@ -117,7 +102,7 @@ body {
   width: 50vw;
 }
 
-.gips-text {
+.cover__title {
   position: absolute;
   top: 9%;
   left: 3%;
@@ -130,7 +115,7 @@ body {
   text-align: center;
 }
 
-.gips-description {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,24 +123,24 @@ body {
   text-align: center;
 }
 
-.gips-description h1 {
+.content__title {
   font-size: 4vw;
   color: #738a78;
   border-bottom: 2px solid #738a78;
-  margin: 0 20vw 2vw 20vw;
+  margin: 3vw 20vw 2vw 20vw;
   padding: 3vw;
   z-index: 1;
 }
 
-.gips-description p {
+.content__text {
   line-height: 1.5;
   color: #738a78;
   font-size: 2vw;
-  margin: 0 15vw 0 15vw;
+  margin: 1vw 15vw 0 15vw;
   z-index: 1;
 }
 
-.arrow {
+.container__arrow {
   box-sizing: border-box;
   height: 5vw;
   width: 5vw;
@@ -166,7 +151,7 @@ body {
   transition: border-width 150ms ease-in-out;
 }
 
-.arrow:hover {
+.container__arrow:hover {
   border-bottom-width: 4px;
   border-right-width: 4px;
 }
@@ -178,21 +163,18 @@ body {
   height: 100vh;
 }
 
-#full {
-  height: 1vw;
-}
-.card-flower {
-  height: 45vw;
-  margin-top: 8vw;
-}
+#container__bottom {height: 1vw;}
 
-.card-flower h1 {
+.flower-cards {height: 45vw;}
+
+.flower-cards__title {
   text-align: center;
   font-size: 3vw;
   color: #536457;
+  margin: 8vw 0 4vw 0
 }
 
-.card-box {
+.flower-cards__box {
   display: flex;
   justify-content: space-evenly;
   height: 30vw;
@@ -212,11 +194,9 @@ body {
   color: #536457;
 }
 
-.card:hover {
-  box-shadow: 20px 20px 4px rgba(212, 215, 169, 0.8);
-}
+.card:hover {box-shadow: 2vw 2vw 0.4vw rgba(212, 215, 169, 0.8);}
 
-.card-image {
+.card__image {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -225,34 +205,29 @@ body {
   height: 79%;
 }
 
-
-.card-image > img {
+.card__image > img {
   width: 20vw;
   height: 20vw;
   object-fit: contain;
   transition: 0.2s;
 }
 
-.card-image:hover > img {
-  transform: scale(1.1);
-}
+.card__image:hover > img {transform: scale(1.1);}
 
-.card-bottom {
-  padding: 10px;
-}
+.card__card-bottom {padding: 1vw;}
   
-.card-prices {
+.card__price {
   margin-bottom: 0.3vw;
   font-size: 1.7vw;
 }
 
-.card-prices:after {
+.card__price:after {
   content: "₽";
   margin-left: 4px;
   position: relative;
 }
 
-.card-title {
+.card__title {
   display: block;
   margin-bottom: 0.3vw;
   font-weight: 400;
@@ -261,42 +236,37 @@ body {
   color: #536457;
 }
   
-.card-title:hover {
-  color: #536457;
-}
+.card__title:hover {color: #536457;}
 
-footer {
+.footer {
   height: 10vw;
   background-color: #738a78;
   margin-top: 5vw;
-}
-
-.flex-footer {
   display: flex;
   justify-content: space-evenly;
-}
-
-.left-side h2 {
-  font-weight: 300;
-}
-
-.left-side p {
-  line-height: 1.5em;
-}
-
-.flow {
-  font-size: 3vw;
-  display: flex;
   align-items: center;
-  letter-spacing: 0.3em;
 }
 
-.right-side h2 {
+.footer__title {
   font-weight: 300;
+  font-size: 2vw;
+  margin-bottom: 1vw;
 }
 
-.right-side > img {
+.footer__text {
+  line-height: 1.5em;
+  font-size: 1vw;
+}
+
+.footer__sns {display: flex;}
+
+.footer__sns-icon {
   height: 2vw;
   width: 2vw;
   padding: 0.5vw 1.8vw 0 0;
+}
+
+.footer__sns-icon > img {
+  height: 100%;
+  width: 100%;
 }

@@ -7,100 +7,105 @@
     <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <header>
-        <nav class="topmenu">
-            <div class="shop-name">
-                <h2>Flow</h2>
+    <header class="header">
+        <h2 class="logo header__logo">Flow</h2>
+        <nav class="header__topmenu">
+            <span class="header__topmenu-item"><a href="index.html">Главная</a></span>
+            <span class="header__topmenu-item"><a href="#">Каталог</a>
+            <div class="header__submenu">
+                <div class="header__submenu-link"><a href="index1.html">Пионы</a></div>
+                <div class="header__submenu-link"><a href="index2.html">Тюльпаны</a></div>
+                <div class="header__submenu-link"><a href="index3.html">Ромашки</a></div>
+                <div class="header__submenu-link"><a href="index4.html">Гипсофилы</a></div>
             </div>
-            <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Каталог</a>
-                <ul class="submenu">
-                    <li><a href="index1.html">Пионы</a></li>
-                    <li><a href="index2.html">Тюльпаны</a></li>
-                    <li><a href="index3.html">Ромашки</a></li>
-                    <li><a href="index4.html">Гипсофилы</a></li>
-                </ul>
-                </li>
-                <li>О нас</li>
-            </ul>
+        </span>
+            <span class="header__topmenu-item"><a href='index5.html'>О нас</a></span>
         </nav>
-    </header>
+</header>
+</header>
     <main>
-        <div class="gips">
-        <div class="pink-box"></div>
-        <div class="grin-box"></div>
-        <img src="images/gypmain.jpeg">
-        <div class="gips-text">Гипсофилы</div>
-        </div>
-        <div class="gips-description">
-            <h1>Гипсофилы</h1>
-            <p>Название Гипсофила переводится достаточно прозаично
+        <article class="cover">
+            <div class="cover__top-side"></div>
+            <div class="cover__bottom-side"></div>
+            <div class="cover__image">
+                <img src="images/gypmain.jpeg" alt="Фоновое изображение">
+            </div>
+            <div class="cover__title">Гипсофила</div>
+        </article>
+        <article class="content">
+            <h1 class="content__title">Гипсофила</h1>
+            <p class="content__text">Название Гипсофила переводится достаточно прозаично
                  – «любящая известь». Это связано с тем, что многие подвиды данного растения предпочитают известковые почвы. 
                  Благодаря своей неприхотливости Гипсофила произрастает почти на всех континентах.
                 Срезанный качим может долго сохранять форму и свежесть в вазе, примерно до месяца.</p>
             <div class="container">
-                <a data-scroll href="#full">
-                    <div class="arrow"></div>
+                <a data-scroll href="#container__bottom">
+                    <div class="container__arrow"></div>
                 </a>
             </div>
-            <div id="full"></div>
-        </div>
-        <article class="card-flower">
-            <h1>Каталог</h1>
-        <div class="card-box">
+            <div id="container__bottom"></div>
+        </article>
+        <article class="flower-cards">
+            <h1 class="flower-cards__title">Каталог</h1>
+        <div class="flower-cards__box">
             <div class="card">
-                <a href="" class="card-image">
+                <a href="" class="card__image">
                     <img src="images/gip1.jpg" alt="Букет small size">
                 </a>
-            <div class="card-bottom">
-                <div class="card-prices">2 000</div>
-                <a href='' class="card-title">Букет гипсофилы small size</a>
+            <div class="card__card-bottom">
+                <div class="card__price">2 000</div>
+                <a href='' class="card__title">Букет гипсофилы small size</a>
             </div>
             </div>
             <div class="card">
-                <a href="" class="card-image">
+                <a href="" class="card__image">
                     <img src="images/gip2.jpg" alt="Букет big size">
                 </a>
-            <div class="card-bottom">
-                <div class="card-prices">5 000</div>
-                <a href='' class="card-title">Букет гипсофилы big size</a>
+            <div class="card__card-bottom">
+                <div class="card__price">5 000</div>
+                <a href='' class="card__title">Букет гипсофилы big size</a>
             </div>
             </div>
             <div class="card">
-                <a href="" class="card-image">
+                <a href="" class="card__image">
                     <img src="images/gip3.jpg" alt="Букет в коробке small size">
                 </a>
-            <div class="card-bottom">
-                <div class="card-prices">5 000</div>
-                <a href='' class="card-title">Букет гипсофилы в коробке small size</a>
+            <div class="card__card-bottom">
+                <div class="card__price">5 000</div>
+                <a href='' class="card__title">Букет гипсофилы в коробке small size</a>
             </div>
             </div>
             <div class="card">
-                <a href="" class="card-image">
+                <a href="" class="card__image">
                     <img src="images/gip4.jpg" alt="Букет в коробке big size">
                 </a>
-            <div class="card-bottom">
-                <div class="card-prices">10 000</div>
-                <a href='' class="card-title">Букет гипсофилы в коробке big size</a>
+            <div class="card__card-bottom">
+                <div class="card__price">10 000</div>
+                <a href='' class="card__title">Букет гипсофилы в коробке big size</a>
             </div>
             </div>
         </div>
         </article>
     </main>
-    <footer>
-        <div class="flex-footer">
-            <div class='left-side'>
-                <h2>Связаться с нами</h2>
-                <p>+7 800 345 23 23<br>flow-shop@mail.ru</p>
+    <footer class="footer">
+        <div class='footer__left-side'>
+            <h2 class="footer__title">Связаться с нами</h2>
+            <p class="footer__text">+7 800 345 23 23<br>flow-shop@mail.ru</p>
+        </div>
+        <div class="logo">Flow</div>
+        <div class="footer__right-side">
+            <div class="footer__sns">
+            <div class="footer__sns-icon">
+                <img src="images/instagram.png" alt="Инстаграм">
             </div>
-            <div class="flow">Flow</div>
-            <div class="right-side">
-                <h2>Наши соцсети</h2>
-                <img src="images/instagram.png">
-                <img src="images/telegram.png">
-                <img src="images/youtube.png">
+            <div class="footer__sns-icon">
+                <img src="images/telegram.png" alt="Телеграм">
             </div>
+            <div class="footer__sns-icon">
+                <img src="images/youtube.png" alt="Ютуб">
+            </div>
+            </div>
+        </div>
         </div>
     </footer> 
 </body>
